@@ -1,0 +1,3 @@
+s1(06Feb2026:10:47:34):  ncverilog -sv +access+r ../rtl/d_ff.v ../tb/tb_dff.v 
+s2(06Feb2026:11:06:12):  ncverilog -sv +access+r ../rtl/d_ff.sv ../tb/tb_dff.sv ../interface/inter_dff.sv ../topmodule/topmod_dff.sv 
+s3(06Feb2026:11:19:59):  ncverilog -sv +access+r ../rtl/d_ff.v ../tb/tb_dff.v ../interface/inter_dff.sv ../topmodule/topmod_dff.sv 

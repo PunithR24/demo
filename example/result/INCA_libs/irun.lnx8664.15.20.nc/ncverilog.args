@@ -1,0 +1,10 @@
+//
+// File created by:  ncverilog
+// Do not modify this file
+//
+-sv
++access+r
+../rtl/d_ff.v
+../tb/tb_dff.v
+../interface/inter_dff.sv
+../topmodule/topmod_dff.sv

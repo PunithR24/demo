@@ -1,0 +1,84 @@
+ncverilog(64): 15.20-s086: (c) Copyright 1995-2020 Cadence Design Systems, Inc.
+TOOL:	ncverilog	15.20-s086: Started on Feb 06, 2026 at 11:19:59 IST
+ncverilog
+	-sv
+	+access+r
+	../rtl/d_ff.v
+	../tb/tb_dff.v
+	../interface/inter_dff.sv
+	../topmodule/topmod_dff.sv
+file: ../rtl/d_ff.v
+	module worklib.D_FF:v
+		errors: 0, warnings: 0
+file: ../tb/tb_dff.v
+	module worklib.test:v
+		errors: 0, warnings: 0
+file: ../interface/inter_dff.sv
+	interface worklib.D_inter:sv
+		errors: 0, warnings: 0
+file: ../topmodule/topmod_dff.sv
+	module worklib.top:sv
+		errors: 0, warnings: 0
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+ncelab: *W,DSEMEL: This SystemVerilog design will be simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.D_FF:v <0x7a7fd757>
+			streams:   4, words:  1526
+		worklib.test:v <0x62a2c30b>
+			streams:   1, words:  4052
+		worklib.top:sv <0x093c20f8>
+			streams:   4, words:  4926
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		             Instances  Unique
+		Modules:             3       3
+		Interfaces:          1       1
+		Registers:           5       5
+		Scalar wires:        1       -
+		Always blocks:       2       2
+		Initial blocks:      2       2
+		Pseudo assignments:  1       1
+	Writing initial simulation snapshot: worklib.top:sv
+Loading snapshot worklib.top:sv .................... Done
+ncsim: *W,DSEM2009: This SystemVerilog design is simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+ncsim> source /opt/cadence/installs/INCISIVE152/tools/inca/files/ncsimrc
+ncsim> run
+time=0, clk=0, reset=0, set=0, d=0, q=x
+time=5, clk=1, reset=0, set=0, d=0, q=0
+time=10, clk=0, reset=1, set=1, d=0, q=0
+time=15, clk=1, reset=1, set=1, d=0, q=0
+time=20, clk=0, reset=0, set=1, d=0, q=0
+time=25, clk=1, reset=0, set=1, d=0, q=1
+time=30, clk=0, reset=0, set=0, d=1, q=1
+time=35, clk=1, reset=0, set=0, d=1, q=1
+time=40, clk=0, reset=0, set=0, d=0, q=1
+time=45, clk=1, reset=0, set=0, d=0, q=0
+time=50, clk=0, reset=0, set=0, d=1, q=0
+time=55, clk=1, reset=0, set=0, d=1, q=1
+time=60, clk=0, reset=0, set=0, d=0, q=1
+time=65, clk=1, reset=0, set=0, d=0, q=0
+time=70, clk=0, reset=0, set=0, d=0, q=0
+time=75, clk=1, reset=0, set=0, d=0, q=0
+time=80, clk=0, reset=0, set=0, d=0, q=0
+time=85, clk=1, reset=0, set=0, d=0, q=0
+time=90, clk=0, reset=0, set=0, d=0, q=0
+time=95, clk=1, reset=0, set=0, d=0, q=0
+time=100, clk=0, reset=0, set=0, d=0, q=0
+time=105, clk=1, reset=0, set=0, d=0, q=0
+time=110, clk=0, reset=0, set=0, d=0, q=0
+time=115, clk=1, reset=0, set=0, d=0, q=0
+time=120, clk=0, reset=0, set=0, d=0, q=0
+time=125, clk=1, reset=0, set=0, d=0, q=0
+time=130, clk=0, reset=0, set=0, d=0, q=0
+time=135, clk=1, reset=0, set=0, d=0, q=0
+time=140, clk=0, reset=0, set=0, d=0, q=0
+time=145, clk=1, reset=0, set=0, d=0, q=0
+time=150, clk=0, reset=0, set=0, d=0, q=0
+time=155, clk=1, reset=0, set=0, d=0, q=0
+Simulation complete via $finish(1) at time 160 NS + 0
+../tb/tb_dff.v:32         $finish;
+ncsim> exit
+TOOL:	ncverilog	15.20-s086: Exiting on Feb 06, 2026 at 11:20:03 IST  (total: 00:00:04)
